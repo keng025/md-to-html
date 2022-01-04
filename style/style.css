@@ -14,14 +14,14 @@ input, #savebutton{
   padding: 3px 7px !important;
 }
 
-.markdown-container{
+.stackedit__html{
   padding-top: 60px;
   width: 100%;
   overflow-x: auto;
 }
 
 @media screen and (max-width: 769px) {
-  .markdown-container{
+  .stackedit__html{
     padding-top: 155px;
   }
 }
