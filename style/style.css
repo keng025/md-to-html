@@ -1,0 +1,136 @@
+
+.markdown-content {
+  width: 70%;
+  margin: auto;
+ 
+}
+
+/* ----------- Selection page ------------- */
+
+input, #savebutton{
+  font-size: 15px;
+}
+#savebutton{
+  padding: 3px 7px !important;
+}
+
+.markdown-container{
+  padding-top: 60px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 769px) {
+  .markdown-container{
+    padding-top: 155px;
+  }
+}
+
+Header{
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #444;
+  height: 50px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 769px) {
+  Header{
+    flex-direction: column;
+    padding: 0.6rem 0;
+    height: 155px;
+  } 
+}
+
+.title{
+  color: #ccc;
+}
+
+.title .my-website, .title .github-page, .title .title-text {
+  margin: 0 0.4rem;
+  font-size: 18px;
+}
+
+.title:first-child {
+  margin-left: 0.8rem;
+}
+
+.title img, .title svg {
+  display: block;
+}
+
+.options, .title {
+  display: flex;
+  align-items: center;
+}
+
+.options {
+  direction: rtl;
+}
+
+@media screen and (max-width: 769px) {
+  .options{
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .options *{
+    margin: 0.2rem !important;
+  }
+}
+
+.input{
+  color: white;
+}
+
+.options * {
+  margin: 0 0.4rem;
+}
+
+input, #savebutton{
+    font-size: 15px;
+}
+#savebutton{
+    padding: 0 7px !important;
+}
+#rtl-checkbox-container, #concat-checkbox-container{
+    margin: 3px 15px !important;
+    color: white;
+}
+#concat-checkbox-container{
+    display: none;
+}
+
+.button{
+  background-color: white;
+  color: #444;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 2.1rem;
+  border-radius: 2px;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: #eee;
+}
+
+#refresh-button{
+  width: 2.2rem;
+  vertical-align: middle;
+}
+
+.multiple-files-desc {
+  padding-left: 2rem;
+}
+
+@media print{    
+  .no-print, .no-print *{
+      display: none !important;
+  }
+}
